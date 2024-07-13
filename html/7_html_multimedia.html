@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="this is the description">
+  <meta name="keywords" content="java, html, css, js, go, react, angular">
+  <meta name="author" content="ijse">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
+  <title>Multimedia</title>
+</head>
+
+<body>
+
+<!-- image -->
+<img src="assets/images/large.jpg" title="Apple Iphone" alt="iphone 14 pro" width="600">
+
+<!-- picture -->
+
+<picture>
+  <source media="(min-width: 1000px)" srcset="assets/images/large.jpg">
+  <source media="(min-width: 800px)" srcset="assets/images/medium.jpg">
+  <img src="assets/images/small.jpg" title="iphone 14 small" alt="iphone 14 small">
+</picture>
+
+<!-- video -->
+<video
+        muted
+        autoplay
+        loop
+        controls
+        poster="assets/images/car-post.png"
+        width="700"
+        height="400"
+>
+  <source src="assets/videos/car.mp4" type="video/mp4">
+  <source src="assets/videos/car.webm" type="video/webm">
+  <!-- track -->
+  <track label="English" kind="subtitles" src="assets/videos/subtitles/sample.vtt" srclang="en">
+  <track label="Arabic" kind="subtitles" src="assets/videos/subtitles/arabic.vtt" srclang="ar">
+</video>
+
+<!-- Audio -->
+<audio controls>
+  <source src="assets/audios/audio_file1.mp3" type="audio/mp3">
+</audio>
+
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="this is the description">
+  <meta name="keywords" content="java, html, css, js, go, react, angular">
+  <meta name="author" content="ijse">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
+  <title>Forms</title>
+</head>
+
+<body>
+
+<form>
+
+  <!-- text input -->
+  <input type="text">
+
+  <br>
+  <br>
+
+  <!-- password input -->
+  <input type="password">
+
+  <br>
+  <br>
+
+  <!-- email input -->
+  <input type="email">
+
+  <br>
+  <br>
+
+  <!-- btn input -->
+  <input type="button" value="Click">
+
+  <br>
+  <br>
+
+  <!-- checkbox input -->
+  <input type="checkbox">
+
+  <br>
+  <br>
+
+  <!-- radio btn -->
+  <input type="radio">
+
+  <br>
+  <br>
+
+  <!-- color picker -->
+  <input type="color">
+
+  <br>
+  <br>
+
+  <!-- date picker -->
+  <input type="date" min="2024-06-15" max="2024-07-13">
+
+  <br>
+  <br>
+
+  <!-- date time picker -->
+  <input type="datetime-local" min="2024-06-15" max="2024-07-13">
+
+  <br>
+  <br>
+
+  <!-- month picker -->
+  <input type="month">
+
+  <br>
+  <br>
+
+  <!-- week picker -->
+  <input type="week">
+
+  <br>
+  <br>
+
+  <!-- time picker -->
+  <input type="time">
+
+  <br>
+  <br>
+
+  <!-- number input -->
+  <input type="number">
+
+  <br>
+  <br>
+
+  <!-- search input -->
+  <input type="search">
+
+  <br>
+  <br>
+
+  <!-- url input -->
+  <input type="url">
+
+  <br>
+  <br>
+
+  <!-- tel input -->
+  <input type="tel">
+
+  <br>
+  <br>
+
+  <!-- range picker -->
+  <input type="range">
+
+  <br>
+  <br>
+
+  <!-- file input -->
+  <input type="file">
+
+  <br>
+  <br>
+
+  <!-- image input -->
+  <input type="image" src="assets/images/small.jpg" title="image" alt="image">
+
+  <br>
+  <br>
+
+  <!-- hidden input -->
+  <input type="hidden">
+
+  <!-- btn -->
+  <input type="button" value="Button">
+  <input type="reset" value="Reset">
+  <input type="submit" value="Submit">
+
+  <!--////////////////////// Label ///////////////////////-->
+
+  <br>
+  <br>
+
+</form>
+
+<hr>
+
+<form action="test.html" method="post">
+
+  <h1>Student Form</h1>
+
+  <label for="first-name">First Name</label> <br>
+  <input type="text" name="fname" id="first-name" placeholder="Enter your first name"> <br><br>
+
+  <label for="last-name">Last Name</label> <br>
+  <input type="text" name="lname" id="last-name" placeholder="Enter your last name"> <br><br>
+
+  <label for="message">Message</label> <br>
+  <textarea
+          name="message"
+          placeholder="Enter your message"
+          id="message"
+          rows="10"
+          cols="100"
+  ></textarea>
+
+  <br><br>
+
+  <label for="program">Program</label> <br>
+  <select id="program" name="program">
+    <option value="">Select your program</option>
+    <optgroup label="Backend Tech">
+      <option value="p1">Java SE</option>
+      <option value="p2">Java EE</option>
+      <option value="p3">Spring boot</option>
+      <option value="p4">NodeJs</option>
+      <option value="p5">GO</option>
+      <option value="p6">Perl</option>
+    </optgroup>
+    <optgroup label="Frontend Tech">
+      <option value="p7">JavaScript</option>
+      <option value="p8">HTML & CSS</option>
+      <option value="p9">Angular</option>
+      <option value="p10">ReactJS</option>
+      <option value="p11">VueJS</option>
+    </optgroup>
+  </select>
+
+  <br><br>
+
+  <fieldset>
+    <legend>Select Payment</legend>
+    <input type="radio" name="payment" id="onetime" value="one-time-pay"> <label for="onetime">One Time Payment</label>
+    <br>
+    <input type="radio" name="payment" id="monthly" value="monthly-pay"> <label for="onetime">Monthly Payment</label>
+  </fieldset>
+
+  <br><br>
+
+  <input type="text" list="developer" name="developer">
+
+  <datalist id="developer">
+    <option value="frontend-developer">Frontend developer</option>
+    <option value="backend-developer">Backend developer</option>
+    <option value="uiux">UI UX</option>
+    <option value="qa">QA</option>
+    <option value="ba">BA</option>
+  </datalist>
+
+  <br><br>
+
+  <!--
+      button
+      submit
+      reset
+  -->
+  <button type="button">Click</button>
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+
+</form>
+
+
+<hr>
+
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="range" id="a" name="a">
+  <input type="number" id="b" name="b">
+  <output name="result" for="a b">0</output>
+</form>
+</body>
+
+</html>
