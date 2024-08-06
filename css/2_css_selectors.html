@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="author" content="ijse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
+
+    <title>CSS Selectors</title>
+
+    <style>
+
+        /* -------------------- type selector -------------------- */
+        /*h2 {*/
+        /*   color: green;*/
+        /*}*/
+
+        /* -------------------- id selector -------------------- */
+        /*#my-topic {*/
+        /*    background: pink;*/
+        /*}*/
+
+        /* -------------------- class selector -------------------- */
+        /*.my-class {*/
+        /*    background: lightblue;*/
+        /*}*/
+
+        /* -------------------- universal selector -------------------- */
+        /** {*/
+        /*    color: deepskyblue;*/
+        /*}*/
+
+        /* -------------------- attribute selector -------------------- */
+
+        /*[href] {*/
+        /*    color: gold;*/
+        /*}*/
+
+        /*attribute selector with value*/
+        /*[href="https://ijse.lk"] {*/
+        /*    color: gold;*/
+        /*}*/
+
+        /*attribute selector with starting value*/
+        /*[href^="https"] {*/
+        /*    font-weight: bold;*/
+        /*}*/
+
+        /*attribute selector with ending value*/
+        /*[href$=".com"] {*/
+        /*    background: red;*/
+        /*}*/
+        /*[href$=".lk"] {*/
+        /*    background: blue;*/
+        /*}*/
+
+        /*[href*="ijse"] {*/
+        /*    background: orangered;*/
+        /*}*/
+
+        /*[href~="ijse"] {*/
+        /*    background: lawngreen;*/
+        /*}*/
+
+        /*h3[class] {*/
+        /*    background: lightpink;*/
+        /*}*/
+
+        /*.h301[name$=".lk"] {*/
+        /*    color: white;*/
+        /*    background: black;*/
+        /*}*/
+
+        /* -------------------- pseudo class selector -------------------- */
+
+        /*select via the element state*/
+        /*h1:hover {*/
+        /*    color: red;*/
+        /*}*/
+
+        /*h1:active {*/
+        /*    color: mediumpurple;*/
+        /*}*/
+
+        /*a:link {*/
+        /*    color: green;*/
+        /*}*/
+
+        /*a:visited {*/
+        /*    color: orangered;*/
+        /*}*/
+
+        /*input:focus {*/
+        /*    background: yellow;*/
+        /*}*/
+
+        /*select via the element tree structure*/
+
+        /*li:first-child {*/
+        /*    color: red;*/
+        /*    background: yellow;*/
+        /*}*/
+
+        /*li:last-child {*/
+        /*    color: darkblue;*/
+        /*    background: skyblue;*/
+        /*}*/
+
+        /*li:nth-child(3) {*/
+        /*    color: green;*/
+        /*    background: lightgreen;*/
+        /*}*/
+
+        /*li:nth-child(5) {*/
+        /*    color: purple;*/
+        /*    background: mediumpurple;*/
+        /*}*/
+
+        /*li:nth-last-child(2) {*/
+        /*    color: gray;*/
+        /*    background: black;*/
+        /*}*/
+
+        /*li:nth-child(odd) {*/
+        /*    color: hotpink;*/
+        /*    background: lightpink;*/
+        /*}*/
+
+        /*li:nth-child(even) {*/
+        /*    color: hotpink;*/
+        /*    background: lightpink;*/
+        /*}*/
+
+        /*li:nth-child(n+4) {*/
+        /*    color: hotpink;*/
+        /*    background: lightpink;*/
+        /*}*/
+
+        /*li:nth-child(3n-1) {*/
+        /*    color: hotpink;*/
+        /*    background: lightpink;*/
+        /*}*/
+
+        /*li:nth-child(3n+1) {*/
+        /*    color: hotpink;*/
+        /*    background: lightpink;*/
+        /*}*/
+
+        /*li:nth-child(4n) {*/
+        /*    color: hotpink;*/
+        /*    background: lightpink;*/
+        /*}*/
+
+        /* -------------------- pseudo element selector -------------------- */
+
+        /*add a content before the content*/
+        h1::before {
+            content: "😊";
+        }
+
+        h1:hover::before {
+            background: hotpink;
+        }
+
+        /*add a content after the content*/
+        h1::after {
+            content: "⚡";
+        }
+
+        p::first-letter {
+            font-weight: bold;
+            color: red;
+        }
+
+        p::first-line {
+            background: yellow;
+        }
+
+        input::placeholder {
+            color: green;
+            background: yellow;
+        }
+
+        input[type="file"]::file-selector-button {
+            background: blue;
+        }
+
+        ::selection {
+            background: hotpink;
+        }
+
+        li::marker {
+            content: "⚡";
+        }
+
+        /*------------------------- Grouping selector ------------------------*/
+
+        h1, #my-topic, .my-class, ul {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1>IJSE - Institute of Software Engineering</h1>
+
+<!--    <h2 class="my-class">Welcome to Internet Technologies - 1</h2>-->
+
+<h2 id="my-topic">Welcome to Internet Technologies - 2</h2>
+
+<p class="my-class">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque, commodi culpa delectus dolorum illo itaque rem tempore! Deleniti dolorem est, eveniet fugit illo ipsum itaque laudantium natus praesentium veritatis.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque, commodi culpa delectus dolorum illo itaque rem tempore! Deleniti dolorem est, eveniet fugit illo ipsum itaque laudantium natus praesentium veritatis.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque, commodi culpa delectus dolorum illo itaque rem tempore! Deleniti dolorem est, eveniet fugit illo ipsum itaque laudantium natus praesentium veritatis.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque, commodi culpa delectus dolorum illo itaque rem tempore! Deleniti dolorem est, eveniet fugit illo ipsum itaque laudantium natus praesentium veritatis.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque, commodi culpa delectus dolorum illo itaque rem tempore! Deleniti dolorem est, eveniet fugit illo ipsum itaque laudantium natus praesentium veritatis.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque, commodi culpa delectus dolorum illo itaque rem tempore! Deleniti dolorem est, eveniet fugit illo ipsum itaque laudantium natus praesentium veritatis.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque, commodi culpa delectus dolorum illo itaque rem tempore! Deleniti dolorem est, eveniet fugit illo ipsum itaque laudantium natus praesentium veritatis.
+</p>
+
+<!--    <p>-->
+<!--        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque, commodi culpa delectus dolorum illo itaque rem tempore! Deleniti dolorem est, eveniet fugit illo ipsum itaque laudantium natus praesentium veritatis.-->
+<!--    </p>-->
+
+<p class="my-class">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque, commodi culpa delectus dolorum illo itaque rem tempore! Deleniti dolorem est, eveniet fugit illo ipsum itaque laudantium natus praesentium veritatis.
+</p>
+
+<!--    <div class="my-class">-->
+<!--        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci atque culpa dicta eos fugit id illo impedit incidunt libero magni minima nulla officiis omnis ratione repudiandae rerum tenetur, ut?-->
+<!--    </div>-->
+
+<!--    <a href="https:// ijse .lk">IJSE 1</a> <br>-->
+<!--    <a href="http:// ijse .lk">IJSE 2</a> <br>-->
+<!--    <a href="https://abc.com">ABC</a> <br>-->
+<!--    <a href="https://hiru.com">Hiru</a> <br>-->
+<!--    <a href="http:// ijse studentslanka.lk">IJSE 2</a> <br>-->
+
+
+<!--    <h3 class="h301">H3 01</h3>-->
+<!--    <h3>H3 02</h3>-->
+<!--    <h3 class="h301" name="hello.lk">H3 03</h3>-->
+<!--    <h3 class="h301" name="IJSE.lk">H3 04</h3>-->
+
+<!--    <a href="https://sirasatv.lk">Sirasa Tv</a> <br>-->
+<!--    <a href="https://hirutv.lk">Hiru Tv</a> <br>-->
+<!--    <a href="https://supremetv.lk">Supreme Tv</a> <br>-->
+
+<input type="text" placeholder="Enter your name">
+
+<input type="file">
+
+<ul>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <li>F</li>
+    <li>G</li>
+    <li>H</li>
+</ul>
+
+</body>
+
+</html>
