@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="this is the description">
+  <meta name="keywords" content="java, html, css, js, go, react, angular">
+  <meta name="author" content="ijse">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
+
+  <title>CSS Values</title>
+
+  <style>
+
+    /*
+        Absolute Mesurement Units
+        > cm
+        > mm
+        > inch
+        > px
+
+        Relative Mesurement Units
+        > vw
+        > vh
+        > em
+        > rem
+        > %
+    */
+
+
+    /*div:first-child {*/
+    /*    background-color: red;*/
+    /*    width: 1000px;*/
+    /*    height: 100px;*/
+    /*}*/
+
+    /*div:nth-child(2) {*/
+    /*    background-color: blue;*/
+    /*    width: 20vw;*/
+    /*    height: 50vh;*/
+    /*}*/
+
+    main {
+      /*font-size: 10px;*/
+    }
+
+    section {
+      font-size: 30px;
+    }
+    /*section>div {*/
+    /*    font-size: 2em; !*2em = 2*parent = 2*30 = 60px*!*/
+    /*}*/
+
+    section>div {
+      font-size: 2rem; /*2rem = 2*root-element-value = 2*16 = 32px*/
+    }
+
+    #mydiv {
+      width: 200px;
+      height: 100px;
+      background-color: gold;
+    }
+
+    #mydiv>div {
+      background-color: red;
+      width: 50%;
+      height: 50%;
+    }
+
+  </style>
+
+<body>
+
+<div></div>
+<div></div>
+
+<main>
+  <section>
+    IJSE
+    <div>Internet Technologies</div>
+  </section>
+</main>
+
+<div id="mydiv">
+  <div></div>
+</div>
+
+</body>
+
+</html>
