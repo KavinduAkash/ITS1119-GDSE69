@@ -1,0 +1,87 @@
+/* ---- Header Styles ---- */
+header {
+    background: lightblue;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+#header-logo {
+    display: flex;
+}
+header>nav {
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+header>nav>ul {
+    list-style: none;
+    margin: 0px;
+}
+header>nav>ul>li {
+    padding: 0px 10px;
+    display: inline;
+}
+header>nav>ul>li>a {
+    text-decoration: none;
+}
+
+/* ---- Hero Styles ---- */
+#hero {
+    margin-top: 70px;
+    padding: 20px;
+    width: 100vw;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#hero>section:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero>section:first-child>div>h2 {
+    font-size: 50px;
+    margin: 10px 0px;
+}
+
+#hero>section:first-child>div>h1 {
+    font-size: 80px;
+    margin: 10px 0px;
+}
+
+#hero>section:first-child>div>p {
+    font-size: 30px;
+}
+
+#hero>section:first-child>div>p>span {
+    color: #26ace0;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/* ---- Footer Styles ---- */
+footer {
+    background: darkslategrey;
+    color: white;
+}
+footer>h4 {
+    font-size: 50px;
+    margin: 5px 0px;
+    padding: 20px;
+}
+#footer-data {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+#footer-ribon {
+    background: black;
+    text-align: center;
+    padding: 20px;
+}

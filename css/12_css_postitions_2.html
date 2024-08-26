@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="this is the description">
+  <meta name="keywords" content="java, html, css, js, go, react, angular">
+  <meta name="author" content="ijse">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
+  <link rel="stylesheet" href="assets/styles/normalize.css">
+
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&family=Russo+One&display=swap" rel="stylesheet">
+
+  <title>CSS Positions: Fixed</title>
+
+  <style>
+
+    header {
+      background: lightyellow;
+      height: 100px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+    }
+
+    header > img {
+      height: fit-content;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    header>nav {
+      /*background: #26ace0;*/
+      height: fit-content;
+      position: absolute;
+      right: 10px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    header>nav>ul {
+      list-style: none;
+    }
+
+    header>nav>ul>li {
+      display: inline;
+      margin: 0px 10px;
+    }
+
+    div {
+      width: 200px;
+      aspect-ratio: 1/1;
+      background: red;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      top: 0;
+      margin: auto;
+    }
+
+    main {
+      margin-top: 105px;
+    }
+
+  </style>
+
+<body>
+
+<!--    <div></div>-->
+
+<header>
+  <img src="assets/images/Ijse_logo.png" title="logo" alt="logo" width="200">
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Service</li>
+      <li>Contacts</li>
+      <li>About US</li>
+    </ul>
+  </nav>
+</header>
+
+
+<main>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dignissimos dolore doloribus ducimus eaque, ex id iure magnam minus obcaecati officiis possimus quo ratione reiciendis similique suscipit tenetur totam.
+  </p>
+</main>
+
+</body>
+
+</html>

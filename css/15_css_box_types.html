@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="this is the description">
+  <meta name="keywords" content="java, html, css, js, go, react, angular">
+  <meta name="author" content="ijse">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
+  <link rel="stylesheet" href="assets/styles/normalize.css">
+
+  <!--google fonts-->
+  <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+  <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+  <!--    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&family=Russo+One&display=swap" rel="stylesheet">-->
+
+  <title>Box Types</title>
+
+  <style>
+
+    /*
+
+    There are 2 types of elements
+        1. Block level elements
+        2. Inline level elements
+
+    Box types
+    ---------
+    1. Block
+    > Content is distributed as a block
+    > get 100% parent's width
+    > vertically
+    > box model applies
+    > h1 {display: block}
+
+    2. Inline
+    > Content is distributed as a line
+    > Only get content width
+    > horizontally - No line breaks
+    > No height and width (auto x auto)
+    > h1 {display: inline}
+
+    3. Inline-block
+    > a mix of block and inline
+    > Only get content width
+    > horizontally - No line breaks
+    > box model applies
+    > h1 {display: inline-block}
+
+    */
+
+    div {
+      width: 100px;
+      height: 100px;
+      background: lightpink;
+      border: 2px solid red;
+      display: inline;
+    }
+
+
+    span {
+      width: 100px;
+      height: 100px;
+      background: lightgreen;
+      border: 2px solid green;
+      display: block;
+    }
+
+    section {
+      width: 100px;
+      height: 100px;
+      background: lightblue;
+      border: 2px solid blue;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+
+<div>hello</div>
+<div>IJSE</div>
+<div>HI</div>
+
+<span>hello</span>
+<span>IJSE</span>
+<span>HI</span>
+
+<section>Hello</section>
+<section>IJSE</section>
+<section>HI</section>
+
+</body>
+
+</html>
