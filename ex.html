@@ -4,22 +4,61 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="author" content="ijse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
+    <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/normalize.css">
 
     <style>
+        section {
+            width: 1000px;
+            height: 600px;
+            border: 5px solid green;
+        }
         div {
-            background:lightpink;
-            width: 500px;
-            height: 500px;
+            background:red;
+            width: 200px;
+            height: 200px;
 
-            border: 5px solid red;
+            animation: my-animation 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes my-animation {
+            0% {
+                margin-left: 0;
+                margin-top: 0;
+            }
+            25% {
+                margin-left: 800px;
+                margin-top: 0;
+            }
+            50% {
+                margin-left: 800px;
+                margin-top: 400px;
+            }
+            75% {
+                margin-left: 0;
+                margin-top: 400px;
+            }
+            100% {
+                margin-left: 0;
+                margin-top: 0;
+            }
         }
     </style>
 
 </head>
 <body>
 
+<section>
     <div></div>
+</section>
+
 
 </body>
 </html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="author" content="ijse">
+
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+    <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
+    <!--    <link rel="stylesheet" href="assets/styles/normalize.css">-->
+
+    <!--google fonts-->
+    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <!--    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&family=Russo+One&display=swap" rel="stylesheet">-->
+
+    <title>Media Query</title>
+
+    <style>
+
+        /*div {*/
+        /*    width: 200px;*/
+        /*    height: 200px;*/
+        /*    background: #26ace0;*/
+        /*}*/
+
+        /*@media all and (max-width: 1000px){*/
+        /*    div {*/
+        /*        background: red;*/
+        /*    }*/
+        /*}*/
+
+        /*@media all and (min-width: 1000px) and (max-width: 2000px){*/
+        /*    div {*/
+        /*        background: red;*/
+        /*    }*/
+        /*}*/
+
+        section {
+            background: lightyellow;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        section>div {
+            border: 1px solid black;
+        }
+
+        section>div>div {
+
+            max-width: 300px;
+            /*min-width: 100px;*/
+
+            background: #26ace0;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        @media all and (max-width: 768px) {
+            section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media all and (max-width: 500px) {
+            section {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!--<div></div>-->
+
+
+<!--card section-->
+<section>
+    <div>
+        <!--card 01-->
+        <div>
+            <h2>Card 01</h2>
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.?
+            </p>
+            <button>Explore🌍</button>
+        </div>
+    </div>
+
+    <div>
+        <!--card 03-->
+        <div>
+            <h2>Card 02</h2>
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.?
+            </p>
+            <button>Explore🌍</button>
+        </div>
+    </div>
+
+    <div>
+        <!--card 03-->
+        <div>
+            <h2>Card 03</h2>
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.?
+            </p>
+            <button>Explore🌍</button>
+        </div></div>
+
+    <div>
+        <!--card 04-->
+        <div>
+            <h2>Card 01</h2>
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.?
+            </p>
+            <button>Explore🌍</button>
+        </div>
+    </div>
+</section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="this is the description">
+  <meta name="keywords" content="java, html, css, js, go, react, angular">
+  <meta name="author" content="ijse">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
+  <link rel="stylesheet" href="assets/styles/normalize.css">
+
+  <title>transition</title>
+
+  <style>
+
+    /*
+        animation-name
+        animation-diraction
+        animation-iteration-count
+        animation-timing-function
+        animation-play-state
+    */
+
+    div {
+      width: 200px;
+      height: 200px;
+      background: yellow;
+
+      /*animation: my-animation 10s;*/
+      animation-name: my-animation;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-direction: alternate-reverse; /*normal, reverse, alternate, alternate-reverse*/
+      animation-delay: 5s;
+    }
+
+    @keyframes my-animation {
+      from {
+        background: blue;
+      }
+      to {
+        background: red;
+        margin-left: 500px;
+        /*transform: rotate(360deg);*/
+      }
+    }
+
+    /*@keyframes my-animation {*/
+    /*    0% {*/
+    /*        background: blue;*/
+    /*    }*/
+    /*    25% {*/
+    /*        background: red;*/
+    /*    }*/
+    /*    50% {*/
+    /*        background: yellow;*/
+    /*    }*/
+    /*    75% {*/
+    /*        background: purple;*/
+    /*    }*/
+    /*    100% {*/
+    /*        background: black;*/
+    /*    }*/
+    /*}*/
+
+
+  </style>
+</head>
+
+<body>
+
+<div></div>
+
+</body>
+
+</html>
