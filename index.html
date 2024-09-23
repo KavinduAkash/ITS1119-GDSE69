@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="description" content="this is the description">
     <meta name="keywords" content="java, html, css, js, go, react, angular">
@@ -10,70 +9,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
     <link rel="stylesheet" href="assets/styles/normalize.css">
-
-    <title>transition</title>
-
-    <style>
-
-        /*
-            animation-name
-            animation-diraction
-            animation-iteration-count
-            animation-timing-function
-            animation-play-state
-        */
-
-        div {
-            width: 200px;
-            height: 200px;
-            background: yellow;
-
-            /*animation: my-animation 10s;*/
-            animation-name: my-animation;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-            animation-direction: alternate-reverse; /*normal, reverse, alternate, alternate-reverse*/
-            animation-delay: 5s;
-        }
-
-        @keyframes my-animation {
-            from {
-                background: blue;
-            }
-            to {
-                background: red;
-                margin-left: 500px;
-                /*transform: rotate(360deg);*/
-            }
-        }
-
-        /*@keyframes my-animation {*/
-        /*    0% {*/
-        /*        background: blue;*/
-        /*    }*/
-        /*    25% {*/
-        /*        background: red;*/
-        /*    }*/
-        /*    50% {*/
-        /*        background: yellow;*/
-        /*    }*/
-        /*    75% {*/
-        /*        background: purple;*/
-        /*    }*/
-        /*    100% {*/
-        /*        background: black;*/
-        /*    }*/
-        /*}*/
-
-
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Bootstrap</title>
 </head>
 
 <body>
 
-    <div></div>
+<div class="position-relative" style="width: 100vw; height: 600px;">
+    <div class="card position-absolute start-0 end-0 m-auto" style="width: 30rem;">
+        <div class="card-body">
+            <form>
 
+                <div class="text-uppercase text-center text-success">
+                    <h3>Student's Details Form</h3>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="fname">
+                </div>
+                <div class="mb-3">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lname">
+                </div>
+
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address</label>
+                    <textarea id="address" class="form-control"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="course" class="form-label">Course</label>
+                    <select id="course" class="form-select" aria-label="Default select example">
+                        <option selected>Select your course</option>
+                        <option value="GDSE">GDSE</option>
+                        <option value="DEP">DEP</option>
+                        <option value="CMJD">CMJD</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Gender</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="gender1">
+                        <label class="form-check-label" for="gender1">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="gender2" checked>
+                        <label class="form-check-label" for="gender2">
+                            Female
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-secondary">Update</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+                <button type="reset" class="btn btn-warning">Reset</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<section>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">#ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Course</th>
+            <th scope="col">Gender</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Charith</td>
+            <td>Mendis</td>
+            <td>Panadura</td>
+            <td>GDSE</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <th scope="row">1</th>
+            <td>Charith</td>
+            <td>Mendis</td>
+            <td>Panadura</td>
+            <td>GDSE</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <th scope="row">1</th>
+            <td>Charith</td>
+            <td>Mendis</td>
+            <td>Panadura</td>
+            <td>GDSE</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <th scope="row">1</th>
+            <td>Charith</td>
+            <td>Mendis</td>
+            <td>Panadura</td>
+            <td>GDSE</td>
+            <td>Male</td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
