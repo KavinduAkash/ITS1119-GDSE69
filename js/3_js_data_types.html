@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+  var x = 1;
+  console.log(typeof x); // number
+
+  x = "hello";
+  console.log(typeof x); // string
+
+  x = true;
+  console.log(typeof x); // boolean
+
+  x = null;
+  console.log(typeof x); // object
+
+  x = undefined;
+  console.log(typeof x); // undefined
+
+  x = Symbol("foo");
+  console.log(typeof x); // symbol
+
+  x = BigInt("1231231231");
+  console.log(typeof x); // bigint
+
+  x = {
+      id: 1,
+      name: "Kavindu"
+  };
+  console.log(typeof x); // object
+
+  x = ["A", "B", "C", "D", 1, 2, true];
+  console.log(typeof x); // object
+
+  x =  function () {}
+  console.log(typeof x); // function
+
+</script>
+
+</body>
+</html>
