@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>07 JS String Methods</title>
+</head>
+<body>
+
+<script>
+
+  var name = "Hello, World!";
+
+  // -- Returns the character at a specified index in a string --
+  var val = name.charAt(7);
+  console.log(val); // W
+
+  // -- Returns the Unicode of the character at a specified index in a string --
+  val = name.charCodeAt(7);
+  console.log(val); // 87
+
+  // -- Combines two or more strings --
+  var str1 = "Hello";
+  var str2 = "Lanka";
+  val = str1.concat(str2);
+  console.log(val); // HelloLanka
+
+  val = str1.concat(",",str2,",Japan");
+  console.log(val); // Hello,Lanka,Japan
+
+  //-- Checks whether a string ends with specified characters --
+  var myStr1 = "Welcome to ijse.lk";
+  var myStr2 = "Welcome to ijse.com";
+  myStr1.endsWith(".lk"); // true
+  myStr2.endsWith(".lk"); // false
+
+  // -- Checks whether a string starts with specified characters --
+  myStr1 = "Welcome to ijse.lk";
+  myStr2 = "Hi! Welcome to ijse.com";
+  myStr1.startsWith("We"); // true
+  myStr2.startsWith("We"); // false
+  myStr2.startsWith("H"); //true
+
+  // -- Converts Unicode values into characters --
+  String.fromCharCode(72); // H
+  String.fromCharCode(75); // K
+
+  // -- Checks whether a string contains the specified substring --
+  var new_str = "Hello! welcome to Sri Lanka. This is the most beautiful country in the world!";
+  new_str.includes("most"); // true
+  new_str.includes("Sri Lanka"); // true
+  new_str.includes("sri Lanka"); // false
+
+  // find string length
+  console.log(new_str.length); // 77
+
+
+</script>
+
+</body>
+</html>
