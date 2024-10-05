@@ -110,6 +110,22 @@
   x.endsWith('ld'); //true
   x.endsWith('com'); //false
 
+  // -- Extracts a specified number of characters from a string,starting at a specified index. --
+  var y = "Hello, world!";
+  y.substr(4); // 'o, world!'
+  y.substr(4, 5); // 'o, wo'
+
+  y.substring(4, 12) // 'o, world'
+
+  y.toLocaleLowerCase(); //'hello, world!'
+  y.toLocaleUpperCase(); // 'HELLO, WORLD!'
+
+  y.toLowerCase() //'hello, world!'
+  y.toUpperCase() //'HELLO, WORLD!'
+
+  // trim
+  var y = " Pathum Sandeepa ";
+  y.trim() // 'Pathum Sandeepa'
 
 </script>
 
