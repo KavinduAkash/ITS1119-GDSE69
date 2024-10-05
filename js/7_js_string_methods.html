@@ -82,6 +82,10 @@
   str = "The quick broWn fox Jumps over the lazy Dog."
   str.match(/([A-Z])\w+/g); // ['The', 'Wn', 'Jumps', 'Dog']
 
+  // -- Searches a string for a specified value or regular expressionpattern and replaces it with another string. --
+  var str100 = "A B C D E F";
+  str100.replace(" ", ","); // 'A,B C D E F'
+  str100.replaceAll(" ", ","); // 'A,B,C,D,E,F'
 </script>
 
 </body>
