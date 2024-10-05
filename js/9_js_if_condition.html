@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09 If statement in JS</title>
+</head>
+<body>
+
+<script>
+
+  // if(condition) {
+  //   // true
+  // }
+  //
+  // if(condition) {
+  //   // true
+  // } else {
+  //   // false
+  // }
+  //
+  // if(condition_1) {
+  //
+  // } else if(condition_2) {
+  //
+  // } else if(condition_3) {
+  //
+  // } else {
+  //
+  // }
+
+  var marks = 45;
+
+  /*
+  90> -> A+
+  75> -> A
+  65> -> B
+  55> -> C
+  35> -> S
+  <35 -> W
+  */
+
+  if(marks>=90) {
+      console.log("A+");
+  } else if(marks>=75) {
+      console.log("A");
+  } else if(marks >= 65) {
+      console.log("B");
+  } else if(marks >=55) {
+      console.log("C");
+  } else if(marks>=35) {
+      console.log("S");
+  } else {
+      console.log("W");
+  }
+
+  // var result1 = (condition) ? "true" : "false";
+  // var result2 = (condition1) ? "A" : (condition2) ? "B" : "C";
+  // var result3 = (condition1) ? "A" : (condition2) ? "B" : (condition3) ? "C" : "D";
+
+  var grade = (marks>=90) ? "A+" :
+                (marks>=75) ? "A" :
+                    (marks>=65) ? "B" :
+                        (marks>=55) ? "C" :
+                            (marks>=35) ? "S" :
+                                "W";
+  console.log("Grade: ", grade);
+
+</script>
+
+</body>
+</html>
