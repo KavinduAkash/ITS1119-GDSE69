@@ -63,6 +63,23 @@
   new_str.indexOf("world") // 7
   new_str.lastIndexOf("world") // 13
 
+  // -- Compares two strings in the current locale --
+  var str1 = "apple";
+  var str2 = "mango";
+  str1.localeCompare(str2) // -1
+  var str3 = "mango";
+  str2.localeCompare(str3) // 0
+  var str4 = "Mango"
+  str4.localeCompare(str3) // 1
+  str3.localeCompare(str4)  // -1
+  var str6 = "Mango"
+  var str7 = "maNgo"
+  str6.localeCompare(str7) // 1
+
+  // -- Searches a string for a specified value or regular expressionpattern and returns an array of the matches. --
+  let str = "The quick brown fox jumps over the lazy dog.";
+  str.match(/o/g); // ['o', 'o', 'o', 'o']
+
 </script>
 
 </body>
