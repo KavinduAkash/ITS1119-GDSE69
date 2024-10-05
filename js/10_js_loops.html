@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10 Loops in JS</title>
+</head>
+<body>
+
+<script>
+
+  // for loops
+
+  /*
+  for(int i = 0; i<10; i++) {
+    sout(i+1);
+  }
+   */
+
+  for(var i = 0; i<100; i++) {
+    console.log(i+1)
+  }
+
+  var sum = 0;
+  for(var i = 1; i<101; i++) {
+      if(i%2===0){
+          sum+=i; // sum = sum + i
+      }
+  }
+  console.log("Sum: ", sum);
+
+  // while (condition) {
+  //     // body
+  // }
+
+  var num = 1;
+  var sum1 = 0;
+  while(num<=100){
+      if(num%2===0) {
+          sum1 += num;
+      }
+      num++;
+  }
+
+  console.log("Sum1: ", sum1);
+
+  // do {
+  //    //
+  // } while (condition)
+
+
+  var num3 = 1;
+  var sum3 = 0;
+
+  do {
+      if(num3%2 === 0) {
+          sum3+=num3;
+      }
+      num3++;
+  } while (num3 <= 100)
+
+  console.log("Sum3: ", sum3)
+
+</script>
+
+</body>
+</html>
