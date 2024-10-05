@@ -86,6 +86,31 @@
   var str100 = "A B C D E F";
   str100.replace(" ", ","); // 'A,B C D E F'
   str100.replaceAll(" ", ","); // 'A,B,C,D,E,F'
+
+  // -- Searches a string for a specified value or regular expressionpattern and returns the index of the first match. --
+  var x = "hello hi welcome hi";
+  x.search('hi'); // 6
+
+  // -- Extracts a part of a string and returns a new string. --
+  var y = "Hello, World";
+  y.slice(7,12) // 'World'
+  y.slice(2, 7) // 'llo, '
+  y.slice(2) // 'llo, World'
+
+  // -- Splits a string into an array of substrings based on aspecified delimiter. --
+  x = "A, B, C, D, E, F"
+  x.split(", "); // ['A', 'B', 'C', 'D', 'E', 'F']
+
+  // -- Checks whether a string starts with specified characters
+  var x = "hello, world";
+  x.startsWith("hello") // true
+  x.startsWith("hi") // false
+
+  // -- Checks whether a string ends with specified characters
+  x.endsWith('ld'); //true
+  x.endsWith('com'); //false
+
+
 </script>
 
 </body>
