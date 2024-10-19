@@ -56,11 +56,11 @@
     let lname = document.getElementById("lname").value;
     let email = document.getElementById("email").value;
 
-    let inner_html = document.getElementById("tbody").innerHTML;
+    // let inner_html = document.getElementById("tbody").innerHTML;
+    // let new_html = inner_html + "<tr> <td>" + fname + "</td> <td>" + lname + "</td> <td>" + email + "</td> </tr>";
+    // document.getElementById("tbody").innerHTML = new_html;
 
-    let new_html = inner_html + "<tr> <td>" + fname + "</td> <td>" + lname + "</td> <td>" + email + "</td> </tr>";
-
-    document.getElementById("tbody").innerHTML = new_html;
+    document.getElementById("tbody").innerHTML += "<tr> <td>" + fname + "</td> <td>" + lname + "</td> <td>" + email + "</td> </tr>";
 
   });
 
