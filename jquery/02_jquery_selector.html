@@ -8,12 +8,17 @@
 
 <h1>Hello JQuery!</h1>
 
+<p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at consequuntur cumque doloribus, dolorum earum eligendi ex illum, laborum magnam mollitia officia perspiciatis quasi qui quibusdam tempore temporibus, voluptatibus voluptatum.</p>
+<p class="description2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab at consequuntur cumque doloribus, dolorum earum eligendi ex illum, laborum magnam mollitia officia perspiciatis quasi qui quibusdam tempore temporibus, voluptatibus voluptatum.</p>
+
 <!--jquery-->
 <script src="../assets/lib/jquery-3.7.1.min.js"></script>
 
 <script>
 
     $("h1").css("background", "red"); // apply red background to selected h1 element
+    $("#description").css("color", "pink"); // apply pink color to selected element using id selector
+    $(".description2").css("color", "yellow"); // apply yellow color to selected element using class selector
 
 </script>
 
