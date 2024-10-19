@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14 Javascript timers</title>
+
+    <style>
+
+        section {
+            display: flex;
+        }
+
+        section>div {
+            width: 100px;
+            aspect-ratio: 1/1;
+            background: lightblue;
+            border: 2px solid darkblue;
+            border-radius: 8px;
+            margin: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section>div>h1 {
+            width: max-content;
+            height: max-content;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h1>JS Timers</h1>
+
+
+<section>
+    <div>
+        <h1>A</h1>
+    </div>
+    <div>
+        <h1>B</h1>
+    </div>
+    <div>
+        <h1>C</h1>
+    </div>
+    <div>
+        <h1>D</h1>
+    </div>
+    <div>
+        <h1>E</h1>
+    </div>
+    <div>
+        <h1>F</h1>
+    </div>
+</section>
+
+<script>
+
+  // set time out
+  // setTimeout(function, delay_time)
+
+  setTimeout(() => {
+      console.log("Timeout!!");
+  }, 6000); // 3000ms
+
+  // set interval
+
+  // setInterval(function, waiting_time)
+
+  setInterval(() => {
+      console.log("Interval!!");
+  }, 3000); // 3000ms
+
+</script>
+
+</body>
+</html>
