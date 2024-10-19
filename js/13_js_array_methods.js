@@ -161,3 +161,8 @@ let arr6 = ["USA", "India", "Japan", "Sri Lanka", "Russia"];
 arr6.map((item, index) => {
     console.log(index + ": " + item);
 });
+
+///////////////////////////////////////////
+
+let arr7 = ["A", "B", "C", "D", "E"];
+console.log("ToString: ", arr7.toString());
