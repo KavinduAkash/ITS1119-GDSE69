@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>15 Javascript Event Listeners</title>
+
+  <style>
+    #box {
+      width: 100px;
+      aspect-ratio: 1/1;
+      background-color: yellow;
+      border: 5px solid orangered;
+    }
+  </style>
 </head>
 <body>
 
@@ -48,20 +57,70 @@
   </tbody>
 </table>
 
+
+<div id="box"></div>
+
 <script>
 
-  document.getElementById("save").addEventListener('click', function () {
+  // click event listener
+  // document.getElementById("save").addEventListener('click', function () {
+  //
+  //   let fname = document.getElementById("fname").value;
+  //   let lname = document.getElementById("lname").value;
+  //   let email = document.getElementById("email").value;
+  //
+  //   // let inner_html = document.getElementById("tbody").innerHTML;
+  //   // let new_html = inner_html + "<tr> <td>" + fname + "</td> <td>" + lname + "</td> <td>" + email + "</td> </tr>";
+  //   // document.getElementById("tbody").innerHTML = new_html;
+  //
+  //   document.getElementById("tbody").innerHTML += "<tr> <td>" + fname + "</td> <td>" + lname + "</td> <td>" + email + "</td> </tr>";
+  //
+  // });
+
+  // double click event listener
+  document.getElementById("save").addEventListener('dblclick', function () {
 
     let fname = document.getElementById("fname").value;
     let lname = document.getElementById("lname").value;
     let email = document.getElementById("email").value;
-
-    // let inner_html = document.getElementById("tbody").innerHTML;
-    // let new_html = inner_html + "<tr> <td>" + fname + "</td> <td>" + lname + "</td> <td>" + email + "</td> </tr>";
-    // document.getElementById("tbody").innerHTML = new_html;
-
     document.getElementById("tbody").innerHTML += "<tr> <td>" + fname + "</td> <td>" + lname + "</td> <td>" + email + "</td> </tr>";
 
+  });
+
+
+  document.getElementById('fname').addEventListener('keydown', function (event) {
+    // console.log("keydown!! - ", event.key);
+    // console.log("keydown!! - ", event.target.value);
+  });
+
+  document.getElementById('fname').addEventListener('keyup', function (event) {
+    // console.log("keyup!!");
+    console.log("keyup!! - ", event.target.value);
+  });
+
+  document.getElementById('fname').addEventListener('keypress', function () {
+    // console.log("keypress!!");
+  });
+
+  document.getElementById("save").addEventListener('mousedown', function () {
+    console.log("mousedown!!");
+  });
+
+  document.getElementById("save").addEventListener('mouseup', function () {
+    console.log("mouseup!!");
+  });
+
+
+  document.getElementById("box").addEventListener('mouseover', function () {
+    console.log("Mouse-over!!");
+  });
+
+  document.getElementById("box").addEventListener('mouseenter', function () {
+    console.log("Mouse-enter!!");
+  });
+
+  document.getElementById("box").addEventListener('mouseout', function () {
+    console.log("Mouse-out!!");
   });
 
 </script>
