@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>04 Jquery Events</title>
+</head>
+<body>
+
+<button>Click</button>
+<h1>Hello Jquery Events!</h1>
+
+<!--jquery-->
+<script src="../assets/lib/jquery-3.7.1.min.js"></script>
+<script>
+
+  // document.getElementsByTagName("button")[0].addEventListener('click', function () {
+  //   console.log("Clicked!");
+  // });
+
+  //////////////////////////////////////////////////
+  // click event
+  $("button").click(function () {
+    console.log("Jquery clicked!");
+  });
+
+  //////////////////////////////////////////////////
+  // dblclick event
+  $("button").dblclick(function () {
+    console.log("Jquery double clicked!");
+  });
+
+  //////////////////////////////////////////////////
+  // mouseenter event
+  $("h1").mouseenter(function () {
+    console.log("Jquery mouse entered!");
+  });
+
+  //////////////////////////////////////////////////
+  // mouseleave event
+  $("h1").mouseleave(function () {
+    console.log("Jquery mouse leaved!");
+  });
+
+  //////////////////////////////////////////////////
+  // mousedown event
+  $("button").mousedown(function () {
+    console.log("Jquery mouse down!");
+  });
+
+  //////////////////////////////////////////////////
+  // mouseup event
+  $("button").mouseup(function () {
+    console.log("Jquery mouse up!");
+  });
+
+</script>
+
+</body>
+</html>
