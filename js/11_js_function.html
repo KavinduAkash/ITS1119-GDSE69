@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11 JS Funtion</title>
+</head>
+<body>
+
+
+<script>
+
+    // ============= Named Functions ==================
+
+  /*
+    function myFunction(param1, param2, param3) {
+
+    }
+   */
+
+  /*
+    function myFunction() {
+        console.log("My Function");
+    }
+
+    myFunction();
+*/
+
+
+  /*
+  function myFunction(i, x) {
+      let total = i + x;
+      // console.log("Sum: " + total);
+      console.log("Sum: ", total);
+  }
+
+  myFunction(1, 2);
+   */
+
+// ============= Function Expressions ==================
+
+    /*
+    const myFunction2 = function() {
+        console.log("My Function 2");
+    }
+
+    myFunction2();
+    */
+
+    const myFunction2 = function(number1, number2) {
+        console.log("Sum: ", number1+number2);
+    }
+
+    myFunction2(4, 6);
+
+// ============= Function constructor ==================
+
+    const myFunction3 = new Function("arg1", "arg2", "return arg1+arg2");
+
+    let result = myFunction3(10, 20);
+    console.log("Result: ", result);
+
+// ============= Arrow Function ==================
+
+    /*
+    const myArrowFunction = () => {
+        console.log("My Arrow Function");
+    }
+
+    myArrowFunction();
+    */
+
+    const myArrowFunction = (value1, value2) => {
+        console.log("Arrow Sum: ", value1+value2);
+    }
+
+    myArrowFunction(30, 40);
+
+
+// ============= Anonymous Function ==================
+
+    // Anonymous Function
+    document.getElementById("myBtn").addEventListener('click', function () {
+
+    })
+
+    // Anonymous Function
+    document.getElementById("myBtn").addEventListener('click', () => {
+
+    })
+
+
+
+</script>
+
+</body>
+</html>
