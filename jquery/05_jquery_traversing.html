@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05 Jquery traversing</title>
+</head>
+<body>
+
+<section>
+  <ul>
+    <li>Frontend</li>
+    <li>Backend</li>
+    <li>
+      <ol>
+        <li>Sri Lanka</li>
+        <li>India</li>
+      </ol>
+    </li>
+  </ul>
+</section>
+
+<!--jquery-->
+<script src="../assets/lib/jquery-3.7.1.min.js"></script>
+
+<script>
+  ///////////////////////////////////
+  // Parents
+  let parents = $("ol").parents();// get all parents
+  let section_parent = $("ol").parents("section"); // get section parent'
+  let select_parents_until = $("ol").parentsUntil("section"); // get all parents between the given elements
+
+  /////////////////////////////////
+  // Children
+  let text = $("ul").children().eq(2).children().eq(0).children().eq(1).text();
+  let first_child = $("ol").children().first(); // select first child
+  let last_child = $("ol").children().last(); // select last child
+
+</script>
+
+</body>
+</html>
