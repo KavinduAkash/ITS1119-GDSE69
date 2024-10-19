@@ -9,6 +9,17 @@
 <button>Click</button>
 <h1>Hello Jquery Events!</h1>
 
+<input type="text" placeholder="Enter your name">
+
+
+<select>
+    <option value="java">Java</option>
+    <option value="python">Python</option>
+    <option value="c#">C#</option>
+    <option value="go">Go</option>
+</select>
+
+
 <!--jquery-->
 <script src="../assets/lib/jquery-3.7.1.min.js"></script>
 <script>
@@ -19,39 +30,83 @@
 
   //////////////////////////////////////////////////
   // click event
-  $("button").click(function () {
-    console.log("Jquery clicked!");
-  });
+  // $("button").click(function () {
+  //   console.log("Jquery clicked!");
+  // });
 
   //////////////////////////////////////////////////
   // dblclick event
-  $("button").dblclick(function () {
-    console.log("Jquery double clicked!");
-  });
+  // $("button").dblclick(function () {
+  //   console.log("Jquery double clicked!");
+  // });
 
   //////////////////////////////////////////////////
   // mouseenter event
-  $("h1").mouseenter(function () {
-    console.log("Jquery mouse entered!");
-  });
+  // $("h1").mouseenter(function () {
+  //   console.log("Jquery mouse entered!");
+  // });
 
   //////////////////////////////////////////////////
   // mouseleave event
-  $("h1").mouseleave(function () {
-    console.log("Jquery mouse leaved!");
-  });
+  // $("h1").mouseleave(function () {
+  //   console.log("Jquery mouse leaved!");
+  // });
+
+  //////////////////////////////////////////////////
+  // hover event
+  // $("h1").hover(function () {
+  //   console.log("Jquery hover!");
+  // });
 
   //////////////////////////////////////////////////
   // mousedown event
-  $("button").mousedown(function () {
-    console.log("Jquery mouse down!");
-  });
+  // $("button").mousedown(function () {
+  //   console.log("Jquery mouse down!");
+  // });
 
   //////////////////////////////////////////////////
   // mouseup event
-  $("button").mouseup(function () {
-    console.log("Jquery mouse up!");
+  // $("button").mouseup(function () {
+  //   console.log("Jquery mouse up!");
+  // });
+
+  //////////////////////////////////////////////////
+  // focus event
+  // $("input").focus(function () {
+  //   console.log("Jquery focus event!");
+  // });
+
+  //////////////////////////////////////////////////
+  // blur event
+  // $("input").blur(function () {
+  //     console.log("Jquery blur event!");
+  // });
+
+  //////////////////////////////////////////////////
+  // change event
+  // $("select").change(function (event) {
+  //     console.log("Jquery change event! - ", event.target.value);
+  // });
+
+  //////////////////////////////////////////////////
+  // on method
+  // $("button").on('click', function () {
+  //    console.log("On method click!!");
+  // });
+  //
+  // $("input").on('input', function (event) {
+  //     console.log("On method input!! - ", event.target.value);
+  // });
+
+  $("button").on({
+      click: function () {
+          console.log("click event!");
+      },
+      dblclick: function () {
+          console.log("dblclick event!");
+      }
   });
+
 
 </script>
 
