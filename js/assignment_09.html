@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KIIT</title>
+
+  <style>
+
+    #kiit {
+      width: fit-content;
+      height: fit-content;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+    }
+    #light-panel {
+      display: flex;
+    }
+    .light {
+      width: 100px;
+      height: 50px;
+      background: white;
+      border: 1px solid black;
+    }
+
+    #btn-panel {
+      width: fit-content;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<section id="kiit">
+  <section id="light-panel">
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+  </section>
+
+  <section id="btn-panel">
+    <button id="start_btn">Start</button>
+    <button id="stop_btn">Stop</button>
+  </section>
+</section>
+
+<script src="../assets/lib/jquery-3.7.1.min.js"></script>
+
+<script>
+
+  const light_count = 6;
+  let current_light = -1;
+  let direction = "RIGHT"; // "RIGHT", "LEFT"
+
+  updateLight = () => {
+    current_light++;
+    $(".light").eq(current_light).css("background", "red");
+  }
+
+  setInterval(updateLight , 3000);
+
+
+</script>
+
+</body>
+</html>
