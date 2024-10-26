@@ -23,6 +23,76 @@
   console.log(person.address); //'Panadura'
 
   person.first_name = "Kavindu"; // update data
+
+  // Constructor Function
+  function Man(first_name, last_name, age) {
+      this.first_name = first_name;
+      this.last_name = last_name;
+      this.age = age;
+  }
+
+  let man = new Man("Kavindu", "Samarasinghe", 28);
+  console.log(man);
+
+  // Class syntax
+  class Teacher {
+      constructor(first_name, last_name, age) {
+        this._first_name = first_name;
+        this._last_name = last_name;
+        this._age = age;
+      }
+
+      get first_name() {
+          return this._first_name;
+      }
+
+      set first_name(first_name) {
+          this._first_name = first_name + '@IJSE';
+      }
+
+      get last_name() {
+          return this._last_name;
+      }
+
+      set last_name(last_name) {
+          this._last_name = last_name;
+      }
+
+      get age() {
+          return age;
+      }
+
+      set age(age) {
+          this._age = age;
+      }
+  }
+
+
+  let teacher = new Teacher("Kavindu", "Samarasinghe", 30);
+  console.log(teacher);
+
+
+
+
+  class Student {
+      constructor(name, school) {
+          this._name=name;
+          this._school=school;
+      }
+
+      get name() {
+          return this._name;
+      }
+
+      set name(name) {
+          this._name=name;
+      }
+  }
+
+  let student = new Student("Kavindu", "IJSE");
+  let student_name = student.name;
+  student.name = "Pathum";
+
 </script>
 </body>
 </html>
