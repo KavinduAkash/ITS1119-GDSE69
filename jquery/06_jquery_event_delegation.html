@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06 Event Delegation in Jquery</title>
+</head>
+<body>
+
+<ul>
+    <li>Java</li>
+    <li>C++</li>
+</ul>
+
+<input type="text">
+<br>
+<button>Add</button>
+
+<script src="../assets/lib/jquery-3.7.1.min.js"></script>
+<script>
+
+   $('button').on('click', function () {
+       let value = $('input').val();
+       let new_value = `<li>${value}</li>`;
+       $('ul').append(new_value);
+   })
+
+   // $('li').on('click', function () {
+   //     console.log("Clicked!");
+   // })
+
+   $('ul').on('click', 'li', function () {
+       let value = $(this).text();
+       let index = $(this).index();
+      console.log('clicked! - ' + index);
+   });
+
+   /*
+   This Keyword
+   ------------
+   The this keyword refers to the context where a piece of code, such as a function's body,
+   is supposed to run. Most typically, it is used in object methods, where this refers to
+   the object that the method is attached to, thus allowing the same method to be reused on
+   different objects.
+    */
+
+</script>
+
+</body>
+</html>

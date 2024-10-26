@@ -111,7 +111,10 @@
           <label for="address" class="form-label">Address</label>
           <textarea class="form-control" id="address" rows="3" placeholder="Enter Address" required></textarea>
         </div>
-        <button id="customer_add_btn" type="button" class="btn btn-primary w-100">Add Customer</button>
+        <div style="display: flex">
+          <button id="customer_add_btn" type="button" class="btn btn-primary w-50">Add Customer</button>
+          <button id="customer_update_btn" type="button" class="btn btn-info w-50">Update Customer</button>
+        </div>
       </form>
     </div>
   </div>
@@ -322,7 +325,6 @@
     order_section.style.display="none";
     order_history_section.style.display="none";
   });
-
 
 </script>
 <script src="script.js"></script>
